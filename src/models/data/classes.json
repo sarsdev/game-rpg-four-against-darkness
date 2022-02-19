@@ -1,0 +1,369 @@
+[
+    {
+        "name": "Gerreiro",
+        "description": "Bravo soldado que vive para batalhar dia após dia",
+        "life": {
+            "description": "6 + nível. Guerreiros de nível 1 têm 7 de vida",
+            "role": "6 + [#level]"
+        },
+        "attributes": [
+            {
+                "description": "Sempre adiciona seu nível aos seus testes de ataque",
+                "role": ":attach: + [#level]"
+            }
+        ],
+        "armorAllowed": [
+            "Escudo",
+            "Armadura leve",
+            "Armadura pesada"
+        ],
+        "weaponsAllowed": [
+            "Qualquer uma"
+        ],
+        "equipmentInitial": "Começa o jogo com armadura leve, escudo e uma arma de mão. Pode trocar seu escudo e sua arma por uma arma de duas mãos ou um arco, se quiser",
+        "wealthInitial": [
+            {
+                "description": "2d6 peças de ouro",
+                "role": "[[2d6]]"
+            }
+        ],
+        "magicsAllowed": []
+    },
+    {
+        "name": "Clérigo",
+        "description": "Soldado que morre por uma causa divina",
+        "life": {
+            "description": "4 + nível. Clérigos de nível 1 têm 5 pontos de vida.",
+            "role": "4 + [#level]"
+        },
+        "attributes": [
+            {
+                "description": "Adiciona metade do seu nível (arredondado para baixo) às suas jogadas de ataque",
+                "role": ":attach: + ( [#level] /. 2 )"
+            },
+            {
+                "description": "Adiciona seu nível máximo quando atacam criaturas mortas-vivas",
+                "role": ":attach: + [#level]"
+            }
+        ],
+        "armorAllowed": [
+            "Escudo",
+            "Armadura leve",
+            "Armadura pesada"
+        ],
+        "weaponsAllowed": [
+            "Arma de mão",
+            "Arma de duas mãos",
+            "Funda"
+        ],
+        "equipmentInitial": "Armadura leve, escudo, arma de mão. Pode trocar sua arma e seu escudo por uma arma de duas mãos. Geralmente preferem armas para esmagar porque as chances de encontrar esqueletos e ratos esqueléticos nas masmorras são bem altas",
+        "wealthInitial": [
+            {
+                "description": "1d6 peças de ouro",
+                "role": "[[1d6]]"
+            }
+        ],
+        "magicsAllowed": [
+            {
+                "description": "Pode lançar a magia Bênção até três vezes por aventura. Quando lançam magias usando pergaminhos, adicionam seu nível somente se a magia sendo lançada for Bênção. Em todos os outros casos, a magia do pergaminho é lançada como se estivessem no nível 1",
+                "magic": "[!Bênção]",
+                "limit": "3x",
+                "role": ":support: + [#level]"
+            },
+            {
+                "description": "Pode usar o poder de Cura três vezes por jogo. Este poder permite curar um número de pontos de vida igual a d6 mais o seu nível. Pode usar a cura a qualquer momento, mesmo durante uma luta, mas não pode atacar no mesmo turno em que cura alguém. Clérigos podem usar a cura em si mesmo ou em um amigo.",
+                "magic": "[!Cura]",
+                "limit": "3x",
+                "role": "[[1d6]] + [#level]"
+            }
+        ]
+    },
+    {
+        "name": "Ladino",
+        "description": "Trapaças e mãos ágeis são normais para quem sempre deseja levar vantagem em tudo",
+        "life": {
+            "description": "3 + nível. Ladinas de 1o nível têm 4 pontos de vida",
+            "role": "3 + [#level]"
+        },
+        "attributes": [
+            {
+                "description": "Adiciona seu nível nas jogadas para desarmar armadilhas e nas jogadas de defesa",
+                "role": ":support: + [#level]"
+            },
+            {
+                "description": "Adiciona seu nível nas jogadas de defesa",
+                "role": ":defense: + [#level]"
+            },
+            {
+                "description": "Adiciona seu nível às suas jogadas de ataque apenas ao atacar lacaios em menor número, ou seja, se o grupo for mais numeroso do que um grupo de capangas",
+                "role": ":attach: + [#level]"
+            }
+        ],
+        "armorAllowed": [
+            "Armadura leve"
+        ],
+        "weaponsAllowed": [
+            "Arma leve",
+            "Funda"
+        ],
+        "equipmentInitial": "Corda, gazuas, armaduras leves e uma arma leve",
+        "wealthInitial": [
+            {
+                "description": "3d6 peças de ouro",
+                "role": "[[3d6]]"
+            }
+        ],
+        "magicsAllowed": []
+    },
+    {
+        "name": "Mago",
+        "description": "Estudar encantos e entender a natureza são os passatempos deste herói",
+        "life": {
+            "description": "2 + nível. Mago de 1o nível têm 3 pontos de vida",
+            "role": "2 + [#level]"
+        },
+        "attributes": [
+            {
+                "description": "Adiciona seu nível apenas ao atacar com magias, incluindo aquelas lançadas com pergaminhos",
+                "role": ":attach: + [#level]"
+            },
+            {
+                "description": "Adiciona seu nível nas jogadas para resolver quebra-cabeças ou enigmas",
+                "role": ":support: + [#level]"
+            }
+        ],
+        "armorAllowed": [
+            "Nenhuma"
+        ],
+        "weaponsAllowed": [
+            "Arma leve",
+            "Funda"
+        ],
+        "equipmentInitial": "Arma leve, livro de magia, instrumentos de escrita",
+        "wealthInitial": [
+            {
+                "description": "4d6 peças de ouro",
+                "role": "[[4d6]]"
+            }
+        ],
+        "magicsAllowed": [
+            {
+                "description": "Começa o jogo com duas magias, mais uma magia por nível, então magos de primeiro nível têm 3 magias",
+                "magic": "",
+                "limit": "",
+                "role": ""
+            },
+            {
+                "description": "Deve decidir quais magias ele preparou antes de iniciar a aventura. Pode preparar várias cópias da mesma magia ou qualquer combinação das seis magias permitidas no jogo",
+                "magic": "",
+                "limit": "",
+                "role": ""
+            },
+            {
+                "description": "Pode encontrar magias adicionais em aventuras e adicioná-las ao repertório de magias que pode preparar. Magias adquiridas ao subir de nível podem ser usadas imediatamente",
+                "magic": "",
+                "limit": "",
+                "role": ""
+            }
+        ]
+    },
+    {
+        "name": "Bárbaro",
+        "description": "Sua raiva é incontrolável e torna-se o melhor combustível para uma boa batalha",
+        "life": {
+            "description": "7 + nível. Um bárbaro de 1o nível tem 8 pontos de vida",
+            "role": "7 + [#level]"
+        },
+        "attributes": [
+            {
+                "description": "Adiciona seu nível aos testes de ataque (corpo a corpo, longa distância)",
+                "role": ":attach: + [#level]"
+            },
+            {
+                "description": "Podem realizar ataques de raiva. O número de ataques de raiva por aventura é de 1+1 por cada dois níveis completos. Ao realizar um ataque de raiva, bárbaros rolam o dado de ataque 3 vezes e escolhe a melhor rolagem. Se o ataque de raiva acertar o alvo, inflige o dobro de dano",
+                "role": ":attach: * 2"
+            },
+            {
+                "description": "Não pode usar itens mágicos, pergaminhos ou poções",
+                "role": ""
+            },
+            {
+                "description": "Pode usar medicamentos feitos de ervas e curas de fontes não mágicas (descanso, ataduras, refeições nutritivas cozinhadas por halflings, etc.). Aceita cura de clérigos, desde que seja uma forma divina e não mágica. Podem usar água benta",
+                "role": ""
+            },
+            {
+                "description": "Não podem ler, portanto não podem conseguir benefícios de livros ou outro material escrito",
+                "role": ""
+            }
+        ],
+        "armorAllowed": [
+            "Escudo",
+            "Armadura leve"
+        ],
+        "weaponsAllowed": [
+            "Qualquer uma"
+        ],
+        "equipmentInitial": "Armadura leve, escudo e uma arma de mão. Você pode trocar sua arma e seu escudo por uma arma de duas mãos ou por um arco",
+        "wealthInitial": [
+            {
+                "description": "1d6 peças de ouro",
+                "role": "[[1d6]]"
+            }
+        ],
+        "magicsAllowed": []
+    },
+    {
+        "name": "Elfo",
+        "description": "Orgulhosos e educados, eles são grandes aliados em uma aventura",
+        "life": {
+            "description": "4 + nível. Elfos de 1o nível têm 5 pontos de vida",
+            "role": "4 + [#level]"
+        },
+        "attributes": [
+            {
+                "description": "Adiciona seu nível às jogadas de ataque, exceto ao usar armas de duas mãos",
+                "role": ":attach: + [#level]"
+            },
+            {
+                "description": "Recebe +1 em sua rolagem de ataque ou magia ao combater orcs, incluindo orclings e orcs brutos e qualquer outro monstro com a palavra 'orc' em seu nome",
+                "role": ":attach: + 1"
+            },
+            {
+                "description": "Adiciona seu nível aos testes de magia, como um mago, inclusive às magias lançadas a partir de um pergaminho",
+                "role": ":attach: + [#level]"
+            }
+        ],
+        "armorAllowed": [
+            "Escudo",
+            "Armadura leve",
+            "Armadura pesada"
+        ],
+        "weaponsAllowed": [
+            "Qualquer uma"
+        ],
+        "equipmentInitial": "Armadura leve, Arma de mão, Arco",
+        "wealthInitial": [
+            {
+                "description": "2d6 peças de ouro",
+                "role": "[[2d6]]"
+            }
+        ],
+        "magicsAllowed": [
+            {
+                "description": "Pode lançar uma única magia por nível por aventura, mas somente se estiver usando armadura leve e NÃO estiver usando escudo",
+                "magic": "",
+                "limit": "",
+                "role": ""
+            },
+            {
+                "description": "Pode carregar um escudo amarrado nas costas e gastar um ataque para empunhá-lo",
+                "magic": "",
+                "limit": "",
+                "role": ""
+            },
+            {
+                "description": "Um elfo de segundo nível pode preparar duas magias, e um elfo de terceiro nível pode preparar três magias. Podem encontrar magias adicionais em aventuras e adicioná-las ao repertório de magia que sabem preparar. Magias adicionadas ao subir de nível podem ser usadas imediatamente",
+                "magic": "",
+                "limit": "",
+                "role": ""
+            },
+            {
+                "description": "Podem aprender qualquer magia permitida a magos, exceto Benção. Elfos podem conjurar Benção apenas de pergaminhos e itens mágicos. Não aprendem magias de um livro de magia como os magos, mas aprendem através de meditação",
+                "magic": "",
+                "limit": "",
+                "role": ""
+            }
+        ]
+    },
+    {
+        "name": "Anão",
+        "description": "Brigões e com completo de inferioridade, as minas com pedras preciosas são seu fascinio",
+        "life": {
+            "description": "5 + nível. Uma anã do 1o nível tem 6 pontos de vida.",
+            "role": "5 + [#level]"
+        },
+        "attributes": [
+            {
+                "description": "Adiciona seu nível às jogadas de ataque, exceto quando usa armas de ataque a distância, como arcos ou fundas",
+                "role": ":attach: + [#level]"
+            },
+            {
+                "description": "Recebem +1 nas jogadas de ataque contra goblins",
+                "role": ":attach: + 1"
+            },
+            {
+                "description": "Recebem +1 nas jogadas de defesa contra trolls, ogros e gigantes",
+                "role": ":defense: + 1"
+            },
+            {
+                "description": "Podem farejar ouro e joias. Quando você encontra um monstro, se tiver um anão ou anã no grupo, role um dado e adicione o nível da personagem. Se o total for 6 ou melhor, você pode determinar o tesouro do monstro ANTES de decidir atacá-lo",
+                "role": ""
+            },
+            {
+                "description": "São extremamente apegados ao seu ouro: um grupo com 2 ou mais anões não pode subornar monstros",
+                "role": ""
+            },
+            {
+                "description": "Ao encontrar tesouros que podem ser divididos (como peças de ouro), você deve sempre atribuir pelo menos uma moeda a cada anão do grupo, se possível. São especialistas em ourivesaria e em gemas preciosas. Quando você vende uma gema preciosa ou item de joalheria, se você tem uma anã no grupo, recebe 20% a mais pela joia (frações arredondadas para baixo)",
+                "role": ""
+            }
+        ],
+        "armorAllowed": [
+            "Escudo",
+            "Armadura leve",
+            "Armadura pesada"
+        ],
+        "weaponsAllowed": [
+            "Qualquer uma"
+        ],
+        "equipmentInitial": "Armadura leve, Escudo, Arma de mão ou Armadura pesada e Arma de duas mãos.",
+        "wealthInitial": [
+            {
+                "description": "3d6 peças de ouro",
+                "role": "[[3d6]]"
+            }
+        ],
+        "magicsAllowed": []
+    },
+    {
+        "name": "Halfling",
+        "description": "Baixinhos fascinantes",
+        "life": {
+            "description": "3 + nível. Halflings de nível 1 tem 4 pontos de vida",
+            "role": "3 + [#level]"
+        },
+        "attributes": [
+            {
+                "description": "Adicionam seu nível às jogadas de defesa contra gigantes, trolls e ogros",
+                "role": ":defense: + [#level]"
+            },
+            {
+                "description": "adicionam 1/3 de seu nível, arrendondado para baixo, em ataques com a funda",
+                "role": ":attach: + ( [#level] /. 3 )"
+            },
+            {
+                "description": "Têm um número de pontos de Sorte igual ao seu nível +1. Podem gastar um ponto de Sorte para fugir de um combate corpo a corpo sem receber um ataque (veja Fugindo do Combate, em Encontros, pág. 45), ou para rolar novamente um dos seguintes testes: um teste de Ataque, um teste de Defesa, um teste de Vasculhar ou uma rolagem nas tabelas de Tesouros e Tesouros Mágicos. Você não pode fazer uma rolagem bônus de novo, mesmo que seja pior que a rolagem original. Todos os pontos de Sorte gastos são recuperados no final da aventura. Ao ganhar ou perder um nível durante uma aventura, também ganham ou perdem um ponto de Sorte",
+                "role": ""
+            },
+            {
+                "description": "Podem, uma vez por aventura quando o grupo descansar (veja Descanso, em Inimigos Diabólicos, pág. 70) usar sua habilidade de culinária para cozinhar uma Refeição Nutritiva, usando 1 ração por personagem. Qualquer personagem que comer uma Refeição Nutritiva cura 1 ponto de Vida além dos pontos de Vida recuperados por descanso. Além disso, um Halfling comendo uma Refeição Nutritiva também pode recuperar 1 de Loucura (Loucura é descrita em Four Against the Abyss). Note que, se não houver rações suficientes, é possível que apenas algumas personagens comam a Refeição Nutritiva",
+                "role": ""
+            }
+        ],
+        "armorAllowed": [
+            "Armadura leve"
+        ],
+        "weaponsAllowed": [
+            "Arma leve",
+            "Funda"
+        ],
+        "equipmentInitial": "3 rações, Funda, Arma leve",
+        "wealthInitial": [
+            {
+                "description": "2d6 peças de ouro",
+                "role": "[[2d6]]"
+            }
+        ],
+        "magicsAllowed": []
+    }
+]
