@@ -1,0 +1,10 @@
+div.panel {
+    background-image: url('./../../../resources/images/bgBrownStone.jpg');
+    border-style: solid;
+    border-width: 1px;
+    border-color: saddlebrown;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 2%;
+    min-width: 300px;
+}

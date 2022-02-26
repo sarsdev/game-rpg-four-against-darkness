@@ -1,23 +1,41 @@
-export class classModel {
+class classModel {
     constructor() {
         this.name = "";
-        this.life = {};
+        this.description = "";
+        this.life = {
+            description: "",
+            role: ""
+        };
         this.equipmentInitial = "";
-        this.attributes = [];
+        this.attributes = [{
+            description: "",
+            role: ""
+        }];
         this.armorAllowed = [];
         this.weaponsAllowed = [];
-        this.wealthInitial = [];
-        this.magicsAllowed = [];
+        this.wealthInitial = {
+            description: "",
+            role: ""
+        };
+        this.magicsAllowed = [{
+            description: "",
+            magic: "",
+            limit: "",
+            role: ""
+        }];
     }
 
-    loadData(pClassData) {
-        this.name = pClassData.name;
-        this.life = pClassData.life;
-        this.equipmentInitial = pClassData.equipmentInitial;
-        this.attributes = pClassData.attributes;
-        this.armorAllowed = pClassData.armorAllowed;
-        this.weaponsAllowed = pClassData.weaponsAllowed;
-        this.wealthInitial = pClassData.wealthInitial;
-        this.magicsAllowed = pClassData.magicsAllowed;
+    loadData(pData) {
+        this.name = pData.name;
+        this.description = pData.description;
+        this.life = pData.life;
+        this.equipmentInitial = pData.equipmentInitial;
+        this.attributes = pData.attributes;
+        this.armorAllowed = pData.armorAllowed;
+        this.weaponsAllowed = pData.weaponsAllowed;
+        this.wealthInitial = pData.wealthInitial;
+        this.magicsAllowed = pData.magicsAllowed;
     }
 }
+
+export default classModel;

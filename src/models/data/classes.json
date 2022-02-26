@@ -1,6 +1,6 @@
 [
     {
-        "name": "Gerreiro",
+        "name": "Guerreiro",
         "description": "Bravo soldado que vive para batalhar dia após dia",
         "life": {
             "description": "6 + nível. Guerreiros de nível 1 têm 7 de vida",
@@ -21,12 +21,10 @@
             "Qualquer uma"
         ],
         "equipmentInitial": "Começa o jogo com armadura leve, escudo e uma arma de mão. Pode trocar seu escudo e sua arma por uma arma de duas mãos ou um arco, se quiser",
-        "wealthInitial": [
-            {
-                "description": "2d6 peças de ouro",
-                "role": "[[2d6]]"
-            }
-        ],
+        "wealthInitial": {
+            "description": "2d6 peças de ouro",
+            "role": "[[2d6]]"
+        },
         "magicsAllowed": []
     },
     {
@@ -57,12 +55,10 @@
             "Funda"
         ],
         "equipmentInitial": "Armadura leve, escudo, arma de mão. Pode trocar sua arma e seu escudo por uma arma de duas mãos. Geralmente preferem armas para esmagar porque as chances de encontrar esqueletos e ratos esqueléticos nas masmorras são bem altas",
-        "wealthInitial": [
-            {
-                "description": "1d6 peças de ouro",
-                "role": "[[1d6]]"
-            }
-        ],
+        "wealthInitial": {
+            "description": "1d6 peças de ouro",
+            "role": "[[1d6]]"
+        },
         "magicsAllowed": [
             {
                 "description": "Pode lançar a magia Bênção até três vezes por aventura. Quando lançam magias usando pergaminhos, adicionam seu nível somente se a magia sendo lançada for Bênção. Em todos os outros casos, a magia do pergaminho é lançada como se estivessem no nível 1",
@@ -107,12 +103,10 @@
             "Funda"
         ],
         "equipmentInitial": "Corda, gazuas, armaduras leves e uma arma leve",
-        "wealthInitial": [
-            {
-                "description": "3d6 peças de ouro",
-                "role": "[[3d6]]"
-            }
-        ],
+        "wealthInitial": {
+            "description": "3d6 peças de ouro",
+            "role": "[[3d6]]"
+        },
         "magicsAllowed": []
     },
     {
@@ -140,12 +134,10 @@
             "Funda"
         ],
         "equipmentInitial": "Arma leve, livro de magia, instrumentos de escrita",
-        "wealthInitial": [
-            {
-                "description": "4d6 peças de ouro",
-                "role": "[[4d6]]"
-            }
-        ],
+        "wealthInitial": {
+            "description": "4d6 peças de ouro",
+            "role": "[[4d6]]"
+        },
         "magicsAllowed": [
             {
                 "description": "Começa o jogo com duas magias, mais uma magia por nível, então magos de primeiro nível têm 3 magias",
@@ -204,12 +196,10 @@
             "Qualquer uma"
         ],
         "equipmentInitial": "Armadura leve, escudo e uma arma de mão. Você pode trocar sua arma e seu escudo por uma arma de duas mãos ou por um arco",
-        "wealthInitial": [
-            {
-                "description": "1d6 peças de ouro",
-                "role": "[[1d6]]"
-            }
-        ],
+        "wealthInitial": {
+            "description": "1d6 peças de ouro",
+            "role": "[[1d6]]"
+        },
         "magicsAllowed": []
     },
     {
@@ -242,12 +232,10 @@
             "Qualquer uma"
         ],
         "equipmentInitial": "Armadura leve, Arma de mão, Arco",
-        "wealthInitial": [
-            {
-                "description": "2d6 peças de ouro",
-                "role": "[[2d6]]"
-            }
-        ],
+        "wealthInitial": {
+            "description": "2d6 peças de ouro",
+            "role": "[[2d6]]"
+        },
         "magicsAllowed": [
             {
                 "description": "Pode lançar uma única magia por nível por aventura, mas somente se estiver usando armadura leve e NÃO estiver usando escudo",
@@ -317,12 +305,10 @@
             "Qualquer uma"
         ],
         "equipmentInitial": "Armadura leve, Escudo, Arma de mão ou Armadura pesada e Arma de duas mãos.",
-        "wealthInitial": [
-            {
-                "description": "3d6 peças de ouro",
-                "role": "[[3d6]]"
-            }
-        ],
+        "wealthInitial": {
+            "description": "3d6 peças de ouro",
+            "role": "[[3d6]]"
+        },
         "magicsAllowed": []
     },
     {
@@ -358,12 +344,10 @@
             "Funda"
         ],
         "equipmentInitial": "3 rações, Funda, Arma leve",
-        "wealthInitial": [
-            {
-                "description": "2d6 peças de ouro",
-                "role": "[[2d6]]"
-            }
-        ],
+        "wealthInitial": {
+            "description": "2d6 peças de ouro",
+            "role": "[[2d6]]"
+        },
         "magicsAllowed": []
     }
 ]
