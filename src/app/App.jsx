@@ -1,10 +1,10 @@
 import './App.css';
-import PlayerSheetView from './components/player-sheet-view/playerSheetView';
+import HomePageView from './components/home-page-view/homePageView';
 
 function App() {
   return (
     <div>
-      <PlayerSheetView></PlayerSheetView>
+      <HomePageView></HomePageView>
     </div>
   );
 }
