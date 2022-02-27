@@ -1,7 +1,7 @@
 import './classView.css';
 import CardClassView from './components/card-class-view/cardClassView';
-import ClassModel from './../../../models/classModel';
-import ClassData from './../../../models/data/classes.json';
+import ClassModel from '../../../models/classModel';
+import ClassData from '../../../models/data/classes.json';
 
 function ClassView() {
     let vClasses = [];

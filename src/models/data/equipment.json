@@ -1,0 +1,119 @@
+{
+    "introduction": "Dinheiro pode ser usado para subornar monstros, para pagar os serviços de cura e alquimia, para comprar armas e outros equipamentos, ou mesmo para ressuscitar alguém do grupo que tenha morrido",
+    "generalRules": "O equipamento pode ser comprado antes do jogo ou entre jogos. Aqui está uma lista de itens que uma personagem pode comprar e seu preço em peças de ouro (PO). Você pode trocar peças de ouro entre personagens a qualquer momento durante o jogo (afinal de contas, são camaradas), mas não durante um combate. Personagens podem decidir reunir seus recursos para garantir que a melhor lutadora do grupo compre a melhor arma que puderem pagar, ou uma magia de bênção para que um companheiro transformado em pedra por uma medusa volte à ação. Se você vender equipamentos, receberá metade do custo em PO, arredondado para baixo. Equipamentos mágicos podem ser vendidos, mas não comprados. Poções e anéis encantados podem ser vendidos por 50 PO. Varinhas, pergaminhos e cajados podem ser vendidos por 100 PO para cada magia que eles contêm. Outros equipamentos mágicos lhe renderão d6 x d6 PO. O equipamento mágico descrito em aventuras ou suplementos terá seu próprio custo em PO",
+    "typeArmor": {
+        "general": "Quando você escolhe uma arma, escolha se ela causa dano esmagador ou cortante. Alguns monstros são atingidos com +1 pelo tipo certo de arma e -1 pelo tipo errado de arma. Você pode carregar mais de uma arma. Durante o combate, você deve usar um turno para trocar armas. Anote a sua arma 'padrão' na sua ficha. Essa é a arma que você estará empunhando quando monstros errantes se aproximarem furtivamente ou quando você entrar em uma sala",
+        "smash": [
+            "São armas que causam traumas contundentes que são melhores contra inimigos frágeis, como esqueletos, que quebram com golpes",
+            "Armas de esmagamento leves: porrete, cajado, bastão, cacetete, nunchaku, bengala, cajado do mago",
+            "Armas de mão de esmagamento: haste de metal, maça, martelo",
+            "Arma de duas mãos de esmagamento: marreta, martelo de guerra, bastão, bastão de guerra",
+            "Armas de projéteis de esmagamento: vara de arremesso, funda"
+        ],
+        "slice": [
+            "São armas cortantes ou pontiagudas que infligem danos cortando e perfurando. Elas podem estar envenenadas",
+            "Armas de mão leves e cortantes: punhal, faca, espada curta",
+            "Armas de mão cortantes: espada, machado, florete, sabre, lança",
+            "Armas cortantes de duas mãos: Pique, lança longa, espada de duas mãos, alabarda, naginata, glaive",
+            "Armas de projéteis cortantes: arco, besta, dardos"
+        ]
+    },
+    "equipments": [
+        {
+            "name": "Arco",
+            "price": 15,
+            "unitPrice": "PO",
+            "description": "Permite que uma personagem realize um único ataque antes que os monstros possam agir MESMO quando eles agirem antes do grupo. Então o arco não pode mais ser usado quando os monstros e as personagens estão em combate corpo a corpo. O usuário do arco precisará gastar um turno para guardar o arco e empunhar outra arma. Flechas são consideradas armas de corte. Você pode assumir que personagens carregam todas as flechas de que precisam e que suas aljavas são reabastecidas entre os jogos. Se você não se importa com a contabilidade adicional, pode manter a conta de quantas flechas são usadas. Personagens começam o jogo com uma aljava de 12 flechas. Todas as flechas usadas no jogo são perdidas ou danificadas. Personagens podem comprar mais flechas, ao custo de 6 PO por dúzia. É possível transportar um máximo de 48 flechas por personagem."
+        },
+        {
+            "name": "Arma de duas mãos",
+            "price": 15,
+            "unitPrice": "PO",
+            "description": "Esta arma requer que duas mãos sejam usadas (então o usuário não pode carregar um escudo ou uma lanterna), mas dá +1 aos testes de ataque do portador. Escolha se sua arma de duas mãos causa dano esmagador ou cortante"
+        },
+        {
+            "name": "Arma de mão",
+            "price": 6,
+            "unitPrice": "PO",
+            "description": "Esta é uma arma padrão como uma espada, machado ou maça. Escolha se você quer uma arma de esmagamento ou cortante"
+        },
+        {
+            "name": "Arma leve",
+            "price": 5,
+            "unitPrice": "PO",
+            "description": "Uma arma leve dá ao usuário -1 nos testes de Ataque. Escolha se sua arma causa dano esmagador ou cortante"
+        },
+        {
+            "name": "Armadura leve",
+            "price": 10,
+            "unitPrice": "PO",
+            "description": "A armadura leve adiciona +1 aos testes de Defesa do usuário. Certos ataques de monstros ignoram esse bônus. Quando o usuário original morre, você pode atribuir uma armadura leve a outro usuário da mesma espécie (a armadura leve de um anão se encaixa em outro anão, mas não em um elfo, halfling ou humano)"
+        },
+        {
+            "name": "Armadura pesada",
+            "price": 30,
+            "unitPrice": "PO",
+            "description": "Uma armadura pesada adiciona +2 aos testes de Defesa do usuário. Certos ataques de monstros vão ignorar esse bônus. Armaduras pesadas tornam o usuário lento, portanto, em certos casos, ocasionam um modificador negativo nos testes de salvamento. A armadura pesada foi projetada para caber em um usuário específico, portanto, você não pode transferi-la para outra personagem se o usuário original morrer"
+        },
+        {
+            "name": "Ataduras",
+            "price": 5,
+            "unitPrice": "PO",
+            "description": "Cada personagem pode aplicar ataduras uma vez por aventura, curando um ponto de vida perdido. O efeito das ataduras é cumulativo com a cura mágica de poções ou magias. Ataduras não podem ser aplicadas durante o combate"
+        },
+        {
+            "name": "Corda",
+            "price": 4,
+            "unitPrice": "PO",
+            "description": "Pode ser necessário para amarrar um monstro derrotado"
+        },
+        {
+            "name": "Escudo",
+            "price": 5,
+            "unitPrice": "PO",
+            "description": "Dá +1 às jogadas de defesa do usuário. Este bônus não se aplica quando a personagem está fugindo de um combate ou quando é surpreendida por monstros errantes. Certos ataques de monstros irão ignorar o bônus de escudo"
+        },
+        {
+            "name": "Frasco de Água Benta",
+            "price": 30,
+            "unitPrice": "PO",
+            "description": "A água benta é a água purificada criada por clérigos de alto nível através de um longo procedimento de canto e purificação em uma bacia de prata. Um frasco de água benta, se jogado como um ataque contra uma criatura suscetível a ele (vampiros, demônios), inflige automaticamente 1 ferimento à criatura. A igreja restringe o uso de água benta, para que um grupo possa comprar no máximo um frasco por personagem"
+        },
+        {
+            "name": "Funda",
+            "price": 4,
+            "unitPrice": "PO",
+            "description": "Esta arma funciona como um arco, mas com -1. As balas de uma funda são tratadas como armas de esmagamento"
+        },
+        {
+            "name": "Lanterna",
+            "price": 4,
+            "unitPrice": "PO",
+            "description": "Um grupo deve ter pelo menos uma lanterna e atribuí-la a uma personagem. Essa personagem deve usar uma mão para carregar a lanterna e não pode usar arco, escudo ou arma de duas mãos. Se o portador da lanterna for morto, outra personagem deve pegar a lanterna no final daquele combate. Você também pode optar por transportar mais do que uma lanterna, apenas por precaução"
+        },
+        {
+            "name": "Magia Benção",
+            "price": 100,
+            "unitPrice": "PO",
+            "description": "Personagens pagam à igreja local para lançar uma magia de Bênção, para remover de um membro do grupo uma condição de jogo como uma maldição ou ter sido transformado em pedra"
+        },
+        {
+            "name": "Poção de Cura",
+            "price": 100,
+            "unitPrice": "PO",
+            "description": "Beber o conteúdo deste frasco, mesmo no meio de um encontro, restaurará a Vida de uma personagem ao seu nível inicial. Nenhuma personagem pode beber mais de uma poção de cura por aventura"
+        },
+        {
+            "name": "Ração (unitário)",
+            "price": 1,
+            "unitPrice": "PO",
+            "description": "No livro básico, rações são usadas pelos Halflings para cozinhar Refeições Nutritivas. Em suplementos com regras para viagens em áreas abertas os personagens devem consumir uma Ração por dia de viagem"
+        },
+        {
+            "name": "Ritual de Ressurreição",
+            "price": 1000,
+            "unitPrice": "PO",
+            "description": "É comprada entre os jogos para ter a chance de ressuscitar um membro morto do grupo"
+        }
+    ]
+}
